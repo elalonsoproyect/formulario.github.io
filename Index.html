@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Empleo Profesional</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Solicitud de Empleo Profesional</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
+
+    <label for="estado">Estado/Provincia:</label>
+    <input type="text" id="estado" name="estado" required>
+
+    <label for="codigo_postal">Código Postal:</label>
+    <input type="text" id="codigo_postal" name="codigo_postal" required>
+
+    <label for="pais">País:</label>
+    <input type="text" id="pais" name="pais" required>
+
+    <label for="posicion">Posición deseada:</label>
+    <select id="posicion" name="posicion">
+      <option value="developer">Desarrollador</option>
+      <option value="designer">Diseñador</option>
+      <option value="manager">Gerente</option>
+      <!-- Agrega más opciones si es necesario -->
+    </select>
+
+    <label for="experiencia">Experiencia (años):</label>
+    <input type="number" id="experiencia" name="experiencia" required>
+
+    <label for="educacion">Educación:</label>
+    <textarea id="educacion" name="educacion" rows="4" required></textarea>
+
+    <label for="habilidades">Habilidades:</label>
+    <textarea id="habilidades" name="habilidades" rows="4" required></textarea>
+
+    <label for="carta_presentacion">Carta de presentación (opcional):</label>
+    <textarea id="carta_presentacion" name="carta_presentacion" rows="4"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>
